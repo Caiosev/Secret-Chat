@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://localhost:8080/ws');
+const socket = new WebSocket('ws://localhost:9000/ws');
 
 let connection = (cb : Function) => {
     console.log('conectando');
@@ -9,6 +9,7 @@ let connection = (cb : Function) => {
 
     socket.onmessage = (msg) => {
         console.log('Message websocket: '+ msg);
+        cb(msg)
     };
     
     socket.onclose = (event) => {
