@@ -2,7 +2,7 @@ import ChatHistory from './components/ChatHistory'
 import ChatInput from './components/ChatInput'
 import Message from './components/Message'
 import {connection, sendMessage} from './api'
-import './App.css'
+import './App.scss'
 import { useState } from 'react'
 
 export interface Message {

@@ -14,7 +14,6 @@ export default function ChatHistory({chatHistory}:Props) {
   
   return (
     <div>
-      ChatHistory
       <div className="">
         {chatHistory.map((msg) => <Message key={msg.timeStamp} message={msg.data} />)}
       </div>

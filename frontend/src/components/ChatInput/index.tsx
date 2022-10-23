@@ -7,7 +7,8 @@ interface Props {
 export default function ChatInput({send}:Props) {
   return (
     <div className='chat-input'>
-        <input type="text" onKeyDown={send}/>
+      <label htmlFor="">{">"}</label>
+        <input type="text" autoFocus onKeyDown={send}/>
     </div>
   )
 }

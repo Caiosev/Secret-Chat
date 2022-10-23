@@ -8,7 +8,7 @@ let connection = (cb : Function) => {
     };
 
     socket.onmessage = (msg) => {
-        console.log('Message websocket: '+ msg);
+        console.log('enviando para websocket: '+ msg);
         cb(msg)
     };
     
